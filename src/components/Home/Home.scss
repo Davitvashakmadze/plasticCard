@@ -1,0 +1,15 @@
+.home-section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  .left-section {
+    width: 40%;
+    height: 100vh;
+    background: linear-gradient(163.95deg, #21092f 4.74%, #610595 88.83%);
+  }
+  .right-section {
+    background: #f2f2f2;
+    width: 60%;
+    height: 100vh;
+  }
+}
