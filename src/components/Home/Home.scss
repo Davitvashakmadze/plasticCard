@@ -1,15 +1,149 @@
 .home-section {
+  font-family: "Space Grotesk", sans-serif;
   display: flex;
   width: 100%;
   height: 100vh;
   .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     width: 40%;
     height: 100vh;
     background: linear-gradient(163.95deg, #21092f 4.74%, #610595 88.83%);
+    .cards-wrapper {
+      position: relative;
+      .card-front {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .oval-icon {
+          display: flex;
+          align-items: center;
+          padding-top: 34px;
+          padding-bottom: 34px;
+          .icon {
+            margin-left: 10px;
+            width: 21px;
+            height: 21px;
+            border: 1px solid #ffffff;
+            border-radius: 100px;
+          }
+          .oval {
+            background-color: #ffffff;
+            border-radius: 100%;
+            width: 47px;
+            height: 47px;
+          }
+        }
+
+        h2 {
+          width: 372px;
+          height: 36px;
+          color: #ffffff;
+          text-align: left;
+        }
+        padding-left: 35px;
+        padding-right: 40px;
+        .owner-exp-date {
+          display: flex;
+          justify-content: space-between;
+          p {
+            color: #ffffff;
+          }
+        }
+
+        bottom: 30px;
+        left: 40%;
+        position: absolute;
+        height: 245px;
+        width: 447px;
+        border-radius: 10px;
+        background: linear-gradient(163.95deg, #6348fe 4.74%, #610595 88.83%);
+      }
+      .card-back {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 23px;
+        padding-bottom: 47px;
+        top: 70%;
+        left: 65%;
+        position: absolute;
+        height: 245px;
+        width: 447px;
+        background: linear-gradient(168.73deg, #ffffff 5%, #d2d3d9 91.69%);
+        border-radius: 10px;
+        .card-back-zone {
+          width: 100%;
+          height: 54px;
+          background-color: #2f2f2f;
+        }
+        .card-back-gray {
+          p{
+            margin: 0;
+            margin-right: 5px;
+            color: #ffffff;
+          }
+          display: flex;
+          justify-content: right;
+          align-items: center;
+          text-align: center;
+          height: 38px;
+          width: 361px;
+          border-radius: 4px;
+          background-color: #adb5be;
+        }
+      }
+    }
   }
   .right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #f2f2f2;
     width: 60%;
     height: 100vh;
+    .input-wrapper {
+      Form {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      width: 381px;
+      height: 352px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      .dates-input {
+        display: flex;
+        justify-content: space-between;
+        width: 105%;
+      }
+      .date-input {
+        width: 80px;
+        display: flex;
+        // justify-content: space-between;
+      }
+      .cvc-label {
+        display: flex;
+        flex-direction: column;
+      }
+      .date-label {
+        display: flex;
+        flex-direction: column;
+      }
+      .cvc-input {
+        width: 92%;
+      }
+    }
+    .sub-btn {
+      Button {
+        width: 100%;
+        background-color: #21092f;
+      }
+    }
   }
 }
