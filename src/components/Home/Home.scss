@@ -174,3 +174,81 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    .left-section {
+      width: 100%;
+      height: auto;
+      .cards-wrapper {
+        .card-front {
+          left: auto;
+          position: relative;
+          width: 93%;
+          background: linear-gradient(163.95deg, #6348fe 4.74%, #610595 88.83%);
+
+          h2 {
+            width: 100%;
+            margin-top: 20px;
+          }
+         
+        }
+        .card-back {
+          top: auto;
+          left: auto;
+          position: relative;
+          height: 50%;
+          width: 93%;
+        
+          .card-back-zone,
+          .card-back-gray {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .right-section {
+      width: 100%;
+      height: auto;
+      .input-wrapper {
+        width: 100%;
+        height: auto;
+        margin: 60px;
+        .dates-input {
+          flex-direction: column;
+          align-items: flex-start;
+          .date-input {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+        .cvc-input {
+          width: 100%;
+        }
+      }
+      .sub-btn {
+        Button {
+          width: 100%;
+        }
+      }
+      .thanks-section {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        .done {
+          width: 60px;
+          height: 60px;
+          font-size: 24px;
+        }
+        .cnt-btn {
+          width: 100%;
+          Button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
