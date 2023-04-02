@@ -3,6 +3,8 @@ import "../Home/Home.scss";
 import { useState } from "react";
 // import Thenks from "./Thenks";
 import { Input, Label, Button } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 import lines from "../../images/lines.png";
 
@@ -154,9 +156,9 @@ const Home = () => {
               ) : (
                 <div className="thanks-section">
                   <div className="done">
-                    <i class="fas fa-check"></i>
+                  <FontAwesomeIcon className="faCheck" icon={faCheck} />
                   </div>
-                  <h2>THENK YOU</h2>
+                  <h2>THANK YOU</h2>
                   <p>We’ve added your card details</p>
                   <div className="cnt-btn">
                     <Button onClick={handleClickRefresh}>Continue</Button>

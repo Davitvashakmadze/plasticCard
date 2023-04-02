@@ -160,7 +160,8 @@
         height: 80px;
         background: linear-gradient(163.95deg, #6348fe 4.74%, #610595 88.83%);
         border-radius: 100%;
-        .fas {
+        .faCheck {
+          font-size: 20px;
           color: #e8e6f0;
         }
       }
@@ -182,17 +183,19 @@
       width: 100%;
       height: auto;
       .cards-wrapper {
+        margin: 20px;
         .card-front {
-          left: auto;
+          top: -12px;
+          left: 35px;
           position: relative;
           width: 93%;
+          height: 50%;
           background: linear-gradient(163.95deg, #6348fe 4.74%, #610595 88.83%);
 
           h2 {
             width: 100%;
             margin-top: 20px;
           }
-         
         }
         .card-back {
           top: auto;
@@ -200,7 +203,7 @@
           position: relative;
           height: 50%;
           width: 93%;
-        
+
           .card-back-zone,
           .card-back-gray {
             width: 100%;
@@ -214,14 +217,11 @@
       height: auto;
       .input-wrapper {
         width: 100%;
-        height: auto;
-        margin: 60px;
+
+        margin: 30px;
         .dates-input {
-          flex-direction: column;
-          align-items: flex-start;
           .date-input {
             width: 100%;
-            margin-bottom: 20px;
           }
         }
         .cvc-input {
