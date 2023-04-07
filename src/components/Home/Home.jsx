@@ -16,6 +16,8 @@ const Home = () => {
   const [cardCvc, setCardCvs] = useState("000");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  
+
   // const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (event) => {
@@ -47,6 +49,7 @@ const Home = () => {
 
   const handleClickRefresh = () => {
     window.location.reload();
+    
   };
 
   return (
